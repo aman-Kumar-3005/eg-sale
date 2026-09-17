@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Price & Home Loan EMI Calculator | Egsale India</title>
+  <meta name="description" content="Calculate plot investment for Aayan Residency (Suraksha Enclave) and bank home loan EMIs for Gurgaon residential projects. Complete transparent cost breakdowns.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23081023'/><text x='50%' y='60%' font-size='50' font-family='sans-serif' font-weight='bold' fill='%23d4af37' text-anchor='middle'>EG</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-calculator">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>Sector 104, Dwarka Expressway, Gurugram • <strong>Open 24 Hours</strong></span>
+      </div>
+      <div class="top-bar-contacts">
+        <div class="top-bar-item">
+          <span>Agency Hotline:</span>
+          <a href="tel:+918800466499" class="top-bar-link">+91 88004 66499</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-header header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Egsale India Home">
+        <div class="logo-badge">EG</div>
+        <div class="logo-text">
+          <div class="logo-name">EG<span>SALE</span> <span class="logo-in">INDIA</span></div>
+          <div class="logo-tagline">Yaha Sab Kuch Bikega</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="plots.html" class="nav-link nav-highlight-link">TCP Plots</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="calculator.html" class="nav-link active">Calculator</a></li>
+          <li><a href="builders.html" class="nav-link">Builders</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="faq.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="mobile-only-menu-cta" style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 0.6rem;">
+            <button class="btn btn-gold" style="width: 100%; justify-content: center;" onclick="openWizardModal()">
+              ★ Enter Lucky Draw (₹31,000 Refundable)
+            </button>
+            <a href="tel:+918800466499" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+              📞 Call Advisor (+91 88004 66499)
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-gold btn-sm header-action-btn-desktop" onclick="openWizardModal()">
+          Lucky Draw Entry
+        </button>
+        <a href="tel:+918800466499" class="header-phone-quick" aria-label="Call Egsale India 24/7">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="current">Real Estate Financial Calculators</span>
+      </div>
+      <h1 class="page-title">Property Investment & Home Loan EMI Estimator</h1>
+      <p class="page-subtitle">
+        Accurate financial planning for your real estate journey. Calculate total outlay, registration charges, and bank loan EMIs for both freehold plots and luxury apartments.
+      </p>
+    </div>
+  </section>
+
+  <!-- CALCULATOR SECTION -->
+  <section class="section-directory" style="padding-top: 3rem;">
+    <div class="container">
+      
+      <!-- Tab Selector -->
+      <div class="faq-tab-bar" style="margin-bottom: 3rem;">
+        <button class="faq-tab-btn active" id="tab-plot-calc" onclick="switchCalc('plot')">
+          1. TCP Plots Cost Breakdown (Aayan Residency)
+        </button>
+        <button class="faq-tab-btn" id="tab-loan-calc" onclick="switchCalc('loan')">
+          2. General Home Loan EMI Calculator
+        </button>
+      </div>
+
+      <!-- CALCULATOR 1: TCP PLOTS -->
+      <div id="plot-calc-container">
+        <div class="calculator-card">
+          <div class="section-head" style="margin-bottom: 2rem;">
+            <div class="section-subtitle">Suraksha Enclave Township (S.E.T)</div>
+            <h2 class="section-title" style="font-size: 2.2rem;">Plot Price Breakdown & Allotment Estimator</h2>
+            <p class="section-desc">Town & Country Planning Haryana Approved Plots (NOC: TCP-OFA/19907/2026) opposite Reliance MET City, Jhajjar.</p>
+          </div>
+
+          <div class="calculator-grid">
+            <div class="calc-inputs">
+              <div>
+                <div class="calc-group-label">
+                  <span>Selected Plot Area:</span>
+                  <span class="calc-val-display" id="plot-size-val">121 Sq. Yards</span>
+                </div>
+                <input type="range" min="121" max="203" step="1" value="121" class="calc-range-slider" id="plot-size-slider">
+                
+                <div class="plot-presets">
+                  <button class="preset-btn active" data-size="121">121 Sq.Yd</button>
+                  <button class="preset-btn" data-size="135">135 Sq.Yd</button>
+                  <button class="preset-btn" data-size="150">150 Sq.Yd</button>
+                  <button class="preset-btn" data-size="180">180 Sq.Yd</button>
+                  <button class="preset-btn" data-size="203">203 Sq.Yd</button>
+                </div>
+              </div>
+
+              <div>
+                <div class="calc-group-label">
+                  <span>Facing & Rate Scheme:</span>
+                </div>
+                <div class="facing-selector">
+                  <div class="facing-option active" data-rate="25000">
+                    <div class="facing-name">South-Facing (First 15 Plots)</div>
+                    <div class="facing-rate">₹25,000 / sq.yd <span class="badge badge-ruby" style="font-size: 0.65rem;">Save ₹2,000/yd</span></div>
+                  </div>
+                  <div class="facing-option" data-rate="27000">
+                    <div class="facing-name">Standard Facing</div>
+                    <div class="facing-rate">₹27,000 / sq.yd</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="background: rgba(8, 16, 35, 0.6); padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border-glass);">
+                <div style="color: var(--emerald-light); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.35rem;">
+                  ✓ Lucky Draw Allotment Rule
+                </div>
+                <p style="color: var(--text-dim); font-size: 0.82rem; line-height: 1.5;">
+                  Submission requires a ₹31,000 registration token that is 100% refundable if you are not allotted your preferred plot or decline participation.
+                </p>
+              </div>
+            </div>
+
+            <div class="calc-results-panel">
+              <div class="result-row">
+                <span>Base Plot Cost</span>
+                <span class="result-val" id="calc-base-cost">₹ 30,25,000</span>
+              </div>
+              <div class="result-row">
+                <span>Govt Registration Fee</span>
+                <span class="result-val" id="calc-reg-fee">₹ 21,000</span>
+              </div>
+              <div class="result-row">
+                <span>100% Refundable Booking Token</span>
+                <span class="result-val" style="color: var(--emerald-light);" id="calc-booking-amt">₹ 31,000</span>
+              </div>
+              <div class="result-row">
+                <span>Balance on Allotment</span>
+                <span class="result-val" id="calc-balance-cost">₹ 30,15,000</span>
+              </div>
+              <div class="result-row highlight">
+                <div>
+                  <div class="result-total-label">Total Outlay</div>
+                  <div style="font-size: 0.72rem; color: var(--text-dim);">Base + Registration Fee</div>
+                </div>
+                <div class="result-total-val" id="calc-total-cost">₹ 30,46,000</div>
+              </div>
+              <div class="result-row" style="border-top: 1px solid var(--border-glass); padding-top: 0.75rem;">
+                <div>
+                  <span style="font-size: 0.85rem; font-weight: 700; color: #ffffff;">Bank Loan EMI (Est.)</span>
+                  <div style="font-size: 0.7rem; color: var(--text-dim);">15 Years @ 8.5% (80% Loan)</div>
+                </div>
+                <span class="result-val text-gold" id="calc-estimated-emi">₹ 24,047 / mo*</span>
+              </div>
+
+              <button class="btn btn-gold btn-sm" style="margin-top: 0.5rem;" onclick="openWizardModal()">
+                Proceed To Lucky Draw Registration
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALCULATOR 2: HOME LOAN EMI -->
+      <div id="loan-calc-container" style="display: none;">
+        <div class="calculator-card">
+          <div class="section-head" style="margin-bottom: 2rem;">
+            <div class="section-subtitle">Pan-Bank Mortgage Tool</div>
+            <h2 class="section-title" style="font-size: 2.2rem;">Home Loan EMI & Interest Calculator</h2>
+            <p class="section-desc">Estimate monthly repayments for primary and resale flats across major lenders (HDFC, SBI, ICICI, Axis).</p>
+          </div>
+
+          <div class="calculator-grid">
+            <div class="calc-inputs">
+              <!-- Loan Amount -->
+              <div>
+                <div class="calc-group-label">
+                  <span>Loan Amount:</span>
+                  <span class="calc-val-display" id="loan-amt-val">₹ 1,00,00,000 (1 Cr)</span>
+                </div>
+                <input type="range" min="1000000" max="50000000" step="500000" value="10000000" class="calc-range-slider" id="loan-amt-slider">
+              </div>
+
+              <!-- Interest Rate -->
+              <div>
+                <div class="calc-group-label">
+                  <span>Interest Rate (% p.a.):</span>
+                  <span class="calc-val-display" id="loan-rate-val">8.5%</span>
+                </div>
+                <input type="range" min="7.0" max="12.0" step="0.1" value="8.5" class="calc-range-slider" id="loan-rate-slider">
+              </div>
+
+              <!-- Tenure -->
+              <div>
+                <div class="calc-group-label">
+                  <span>Loan Tenure (Years):</span>
+                  <span class="calc-val-display" id="loan-tenure-val">20 Years</span>
+                </div>
+                <input type="range" min="5" max="30" step="1" value="20" class="calc-range-slider" id="loan-tenure-slider">
+              </div>
+            </div>
+
+            <!-- Loan Results -->
+            <div class="calc-results-panel">
+              <div class="result-row">
+                <span>Principal Loan Amount</span>
+                <span class="result-val" id="hl-principal">₹ 1,00,00,000</span>
+              </div>
+              <div class="result-row">
+                <span>Total Interest Payable</span>
+                <span class="result-val text-gold" id="hl-interest">₹ 1,08,52,563</span>
+              </div>
+              <div class="result-row highlight">
+                <div>
+                  <div class="result-total-label">Monthly EMI</div>
+                  <div style="font-size: 0.72rem; color: var(--text-dim);">Equated Monthly Instalment</div>
+                </div>
+                <div class="result-total-val" id="hl-emi">₹ 86,782</div>
+              </div>
+              <div class="result-row" style="border-top: 1px solid var(--border-glass); padding-top: 0.75rem;">
+                <div>
+                  <span style="font-size: 0.85rem; font-weight: 700; color: #ffffff;">Total Payment</span>
+                  <div style="font-size: 0.7rem; color: var(--text-dim);">Principal + Total Interest</div>
+                </div>
+                <span class="result-val" id="hl-total">₹ 2,08,52,563</span>
+              </div>
+
+              <a href="https://wa.me/918800466499?text=Hello%20Egsale%20India,%20I%20need%20assistance%20with%20bank%20loan%20pre-approval%20for%20a%20Gurgaon%20property." 
+                 target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm" style="margin-top: 0.5rem;">
+                Get Bank Loan Pre-Approval Assistance
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Egsale India Private Limited. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="plots.html">TCP Plots</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: LUCKY DRAW WIZARD -->
+  <div class="modal-overlay" id="wizard-modal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="closeModal('wizard-modal')">✕</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-emerald">TCP Govt-Approved (NOC: TCP-OFA/19907/2026)</span>
+        <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: #ffffff; margin-top: 0.5rem;">
+          Aayan Residency Lucky Draw Entry
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">₹31,000 Fully Refundable Booking Token</p>
+      </div>
+
+      <div class="wizard-progress-bar">
+        <div class="wizard-step active" id="wiz-ind-1"><div class="wizard-step-circle">1</div><span class="wizard-step-label">Applicant</span></div>
+        <div class="wizard-step" id="wiz-ind-2"><div class="wizard-step-circle">2</div><span class="wizard-step-label">Plot Choice</span></div>
+        <div class="wizard-step" id="wiz-ind-3"><div class="wizard-step-circle">3</div><span class="wizard-step-label">Confirmation</span></div>
+      </div>
+
+      <div class="wizard-content-step active" id="wizard-step-1">
+        <div class="form-group"><label class="form-label">Full Name *</label><input type="text" id="w-name" class="form-input" placeholder="Your Name" required></div>
+        <div class="form-group"><label class="form-label">WhatsApp Number *</label><input type="tel" id="w-phone" class="form-input" placeholder="+91 98100 XXXXX" required></div>
+        <div class="form-group"><label class="form-label">City of Residence</label><input type="text" id="w-city" class="form-input" placeholder="e.g. Gurugram / Delhi"></div>
+        <button class="btn btn-gold" style="width: 100%; margin-top: 1rem;" onclick="nextWizardStep()">Continue →</button>
+      </div>
+
+      <div class="wizard-content-step" id="wizard-step-2">
+        <div class="form-group">
+          <label class="form-label">Plot Size (Sq. Yards) *</label>
+          <select id="w-plot-size" class="form-input">
+            <option value="121">121 Sq. Yards</option>
+            <option value="135">135 Sq. Yards</option>
+            <option value="150">150 Sq. Yards</option>
+            <option value="180">180 Sq. Yards</option>
+            <option value="203">203 Sq. Yards</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Facing Preference</label>
+          <select id="w-facing" class="form-input">
+            <option value="South-Facing Promo">South-Facing (Special Promo @ ₹25,000/yd)</option>
+            <option value="Standard Facing">North / East Facing (@ ₹27,000/yd)</option>
+          </select>
+        </div>
+        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+          <button class="btn btn-outline-gold" style="flex: 1;" onclick="prevWizardStep()">← Back</button>
+          <button class="btn btn-gold" style="flex: 1;" onclick="nextWizardStep()">Review →</button>
+        </div>
+      </div>
+
+      <div class="wizard-content-step" id="wizard-step-3">
+        <div id="w-summary-box" style="background: rgba(8, 16, 35, 0.75); border: 1px solid var(--border-glass); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem;"></div>
+        <div style="display: flex; gap: 1rem;">
+          <button class="btn btn-outline-gold" style="flex: 1;" onclick="prevWizardStep()">← Edit</button>
+          <button class="btn btn-gold" style="flex: 1.5;" onclick="submitWizardEntry(event)">Submit Allotment Token</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    function switchCalc(mode) {
+      document.getElementById('plot-calc-container').style.display = mode === 'plot' ? 'block' : 'none';
+      document.getElementById('loan-calc-container').style.display = mode === 'loan' ? 'block' : 'none';
+      document.getElementById('tab-plot-calc').classList.toggle('active', mode === 'plot');
+      document.getElementById('tab-loan-calc').classList.toggle('active', mode === 'loan');
+    }
+
+    // Home loan calculation
+    const hlAmountSlider = document.getElementById('loan-amt-slider');
+    const hlRateSlider = document.getElementById('loan-rate-slider');
+    const hlTenureSlider = document.getElementById('loan-tenure-slider');
+
+    function calculateHomeLoan() {
+      const P = parseFloat(hlAmountSlider.value);
+      const annualRate = parseFloat(hlRateSlider.value);
+      const tenureYears = parseInt(hlTenureSlider.value, 10);
+
+      const r = annualRate / (12 * 100);
+      const n = tenureYears * 12;
+
+      const emi = Math.round((P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1));
+      const totalPay = emi * n;
+      const totalInt = totalPay - P;
+
+      const formatINR = (val) => '₹ ' + Math.round(val).toLocaleString('en-IN');
+
+      document.getElementById('loan-amt-val').textContent = formatINR(P);
+      document.getElementById('loan-rate-val').textContent = annualRate.toFixed(1) + '%';
+      document.getElementById('loan-tenure-val').textContent = `${tenureYears} Years`;
+
+      document.getElementById('hl-principal').textContent = formatINR(P);
+      document.getElementById('hl-interest').textContent = formatINR(totalInt);
+      document.getElementById('hl-emi').textContent = formatINR(emi);
+      document.getElementById('hl-total').textContent = formatINR(totalPay);
+    }
+
+    hlAmountSlider.addEventListener('input', calculateHomeLoan);
+    hlRateSlider.addEventListener('input', calculateHomeLoan);
+    hlTenureSlider.addEventListener('input', calculateHomeLoan);
+    calculateHomeLoan();
+  </script>
+</body>
+</html>

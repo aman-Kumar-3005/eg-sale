@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-head-title">Project Details | Egsale India</title>
+  <meta name="description" id="page-head-desc" content="Comprehensive project details, verified HARERA registration, floor plans, and pricing for Gurgaon residential developments.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23081023'/><text x='50%' y='60%' font-size='50' font-family='sans-serif' font-weight='bold' fill='%23d4af37' text-anchor='middle'>EG</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-project-detail">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>Sector 104, Dwarka Expressway, Gurugram • <strong>Open 24 Hours</strong></span>
+      </div>
+      <div class="top-bar-contacts">
+        <div class="top-bar-item">
+          <span>Agency Hotline:</span>
+          <a href="tel:+918800466499" class="top-bar-link">+91 88004 66499</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-header header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Egsale India Home">
+        <div class="logo-badge">EG</div>
+        <div class="logo-text">
+          <div class="logo-name">EG<span>SALE</span> <span class="logo-in">INDIA</span></div>
+          <div class="logo-tagline">Yaha Sab Kuch Bikega</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="plots.html" class="nav-link nav-highlight-link">TCP Plots</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="calculator.html" class="nav-link">Calculator</a></li>
+          <li><a href="builders.html" class="nav-link">Builders</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="faq.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="mobile-only-menu-cta" style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 0.6rem;">
+            <a href="projects.html" class="btn btn-outline-gold" style="width: 100%; justify-content: center;">
+              ← Back to All Projects
+            </a>
+            <a href="tel:+918800466499" class="btn btn-gold" style="width: 100%; justify-content: center;">
+              📞 Call Agency (+91 88004 66499)
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="projects.html" class="btn btn-outline-gold btn-sm header-action-btn-desktop">
+          ← All Projects
+        </a>
+        <a href="tel:+918800466499" class="header-phone-quick" aria-label="Call Egsale India 24/7">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- DYNAMIC PROJECT HERO BANNER -->
+  <section class="page-banner" id="project-detail-banner">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="projects.html">Gurgaon Projects</a>
+        <span>/</span>
+        <span class="current" id="crumb-project-name">Loading...</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem;">
+            <span class="badge badge-gold" id="detail-builder-badge">Developer</span>
+            <span class="badge badge-emerald" id="detail-status-badge">Status</span>
+          </div>
+          <h1 class="page-title" id="detail-project-title">Loading Project...</h1>
+          <p class="page-subtitle" id="detail-project-loc">Dwarka Expressway Corridor, Gurugram</p>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase;">Estimated Price Range</div>
+          <div style="font-family: var(--font-accent); font-size: 2.2rem; font-weight: 800; color: var(--gold-bright);" id="detail-price-tag">
+            --
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN PROJECT CONTENT -->
+  <section class="section-directory" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="detail-layout-grid">
+        
+        <!-- Left Main Content -->
+        <div>
+          <!-- High Res Gallery -->
+          <div class="detail-gallery-main">
+            <img src="" alt="Project Image" id="detail-main-img">
+          </div>
+
+          <!-- RERA Verification Seal Card -->
+          <div style="background: rgba(16, 185, 129, 0.08); border: 1.5px solid rgba(16, 185, 129, 0.35); border-radius: 16px; padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--emerald); display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 800; font-size: 1.3rem;">
+                ✓
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--emerald-light); font-weight: 700; text-transform: uppercase;">
+                  Verified Regulatory Registration
+                </div>
+                <div style="font-family: var(--font-accent); font-size: 1.2rem; font-weight: 800; color: #ffffff;" id="detail-rera-id">
+                  HARERA
+                </div>
+              </div>
+            </div>
+            <span class="badge badge-emerald">Haryana RERA Clear</span>
+          </div>
+
+          <!-- Specs Table -->
+          <div class="detail-specs-box">
+            <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 1.25rem;">Property Architectural Metrics</h3>
+            <div class="detail-spec-row">
+              <span style="color: var(--text-muted);">Developer</span>
+              <strong style="color: #ffffff;" id="spec-builder">--</strong>
+            </div>
+            <div class="detail-spec-row">
+              <span style="color: var(--text-muted);">Gurgaon Sector</span>
+              <strong style="color: #ffffff;" id="spec-sector">--</strong>
+            </div>
+            <div class="detail-spec-row">
+              <span style="color: var(--text-muted);">Living Configurations</span>
+              <strong style="color: var(--gold-light);" id="spec-bhk">--</strong>
+            </div>
+            <div class="detail-spec-row">
+              <span style="color: var(--text-muted);">Possession Status</span>
+              <strong style="color: #ffffff;" id="spec-status">--</strong>
+            </div>
+            <div class="detail-spec-row">
+              <span style="color: var(--text-muted);">Project Delivery Progress</span>
+              <strong style="color: var(--emerald-light);" id="spec-progress">--</strong>
+            </div>
+          </div>
+
+          <!-- Project Highlights -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 16px; padding: 1.75rem; margin-bottom: 2.5rem;">
+            <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 0.75rem;">Community Overview & Highlights</h3>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;" id="detail-highlight-text">
+              --
+            </p>
+          </div>
+
+          <!-- Nearby Recommendations -->
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: #ffffff; margin-bottom: 1.25rem;">
+            Alternative Developments In Prime Corridors
+          </h3>
+          <div class="projects-grid" style="grid-template-columns: repeat(2, 1fr);" id="related-projects-container">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Right Sticky Inquiry Card -->
+        <div>
+          <div class="detail-sidebar-card">
+            <h3 style="font-size: 1.4rem; color: #ffffff; margin-bottom: 0.4rem;">Schedule Site Visit</h3>
+            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+              Connect directly with our Sector 104 office for floor layouts, actual photographs, and resale deed clearance.
+            </p>
+
+            <form onsubmit="handleVisitSubmit(event)">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" id="visit-name" class="form-input" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">WhatsApp Contact *</label>
+                <input type="tel" id="visit-phone" class="form-input" placeholder="+91 98100 XXXXX" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Preferred BHK *</label>
+                <select id="visit-bhk-select" class="form-input">
+                  <!-- Dynamically populated -->
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Preferred Date for Site Visit</label>
+                <input type="date" id="visit-date" class="form-input">
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width: 100%; margin-bottom: 0.75rem;">
+                Request Confirmed Visit
+              </button>
+            </form>
+
+            <a id="detail-whatsapp-btn" href="#" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 2.17.7 4.19 1.94 5.86L2.8 22l4.31-1.12C8.7 21.6 10.3 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.57 0-3.04-.42-4.32-1.16l-.31-.18-2.56.67.68-2.5-.19-.32C4.54 15.17 4.1 13.63 4.1 12c0-4.36 3.54-7.9 7.9-7.9s7.9 3.54 7.9 7.9-3.54 7.9-7.9 7.9z"/></svg>
+              Chat on WhatsApp (Instant)
+            </a>
+
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-glass); text-align: center; font-size: 0.8rem; color: var(--text-dim);">
+              📍 Egsale India Office: Sector 104, Dwarka Expressway<br>
+              📞 <strong>+91 88004 66499</strong> (Open 24 Hours)
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Egsale India Private Limited. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">All Projects</a>
+          <a href="plots.html">TCP Plots</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    let currentProject = null;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const projectId = params.get('id') || 'experion-heartsong';
+
+      currentProject = EGSALE_DATA.projects.find(p => p.id === projectId) || EGSALE_DATA.projects[0];
+
+      // Update Head Metadata
+      document.getElementById('page-head-title').textContent = `${currentProject.name} (${currentProject.sector}) | Egsale India`;
+      document.getElementById('page-head-desc').setAttribute('content', `${currentProject.name} in ${currentProject.sector}, Gurgaon by ${currentProject.builder}. Verified RERA: ${currentProject.rera}. Pricing: ${currentProject.priceRange}.`);
+
+      // Update DOM Elements
+      document.getElementById('crumb-project-name').textContent = currentProject.name;
+      document.getElementById('detail-builder-badge').textContent = currentProject.builder;
+      document.getElementById('detail-status-badge').textContent = currentProject.status;
+      document.getElementById('detail-project-title').textContent = currentProject.name;
+      document.getElementById('detail-project-loc').textContent = `${currentProject.sector}, Dwarka Expressway Corridor, Gurugram`;
+      document.getElementById('detail-price-tag').textContent = currentProject.priceRange;
+      document.getElementById('detail-main-img').src = currentProject.image;
+      document.getElementById('detail-main-img').alt = currentProject.name;
+      document.getElementById('detail-rera-id').textContent = currentProject.rera;
+
+      // Specs
+      document.getElementById('spec-builder').textContent = currentProject.builder;
+      document.getElementById('spec-sector').textContent = currentProject.sector;
+      document.getElementById('spec-bhk').textContent = currentProject.bhk.join(' • ');
+      document.getElementById('spec-status').textContent = currentProject.status;
+      document.getElementById('spec-progress').textContent = `${currentProject.possessionProgress}% Complete`;
+      document.getElementById('detail-highlight-text').textContent = currentProject.highlight;
+
+      // BHK Dropdown in form
+      const bhkSelect = document.getElementById('visit-bhk-select');
+      bhkSelect.innerHTML = currentProject.bhk.map(b => `<option value="${b}">${b} Layout</option>`).join('');
+
+      // WhatsApp Button
+      const waUrl = `https://wa.me/918800466499?text=Hello%20Egsale%20India,%20I%20am%20interested%20in%20${encodeURIComponent(currentProject.name)}%20(${encodeURIComponent(currentProject.sector)}).%20Please%20share%20floor%20plans%20and%20availabilities.`;
+      document.getElementById('detail-whatsapp-btn').href = waUrl;
+
+      // Related Projects
+      const related = EGSALE_DATA.projects.filter(p => p.id !== currentProject.id).slice(0, 2);
+      const relContainer = document.getElementById('related-projects-container');
+      relContainer.innerHTML = related.map(p => `
+        <article class="project-card">
+          <div class="project-card-image-wrap" style="height: 180px;">
+            <img src="${p.image}" alt="${p.name}" class="project-card-image">
+            <div class="project-floating-status"><span class="badge badge-gold">${p.status}</span></div>
+          </div>
+          <div class="project-card-body" style="padding: 1.25rem;">
+            <div class="project-builder-name">${p.builder}</div>
+            <h4 style="font-size: 1.15rem; color: #ffffff; margin-bottom: 0.35rem;">${p.name}</h4>
+            <div style="font-weight: 800; color: var(--gold-light); margin-bottom: 0.75rem;">${p.priceRange}</div>
+            <a href="project-detail.html?id=${p.id}" class="btn btn-outline-gold btn-sm" style="width: 100%;">Inspect Property</a>
+          </div>
+        </article>
+      `).join('');
+    });
+
+    function handleVisitSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('visit-name').value;
+      const phone = document.getElementById('visit-phone').value;
+      const bhk = document.getElementById('visit-bhk-select').value;
+      const date = document.getElementById('visit-date').value;
+
+      const url = `https://wa.me/918800466499?text=Hello%20Egsale%20India,%20my%20name%20is%20${encodeURIComponent(name)}%20(${encodeURIComponent(phone)}).%20I%20want%20to%20schedule%20a%20site%20visit%20for%20${encodeURIComponent(currentProject.name)}%20(${encodeURIComponent(bhk)})%20on%20${encodeURIComponent(date || 'Earliest available date')}.`;
+      window.open(url, '_blank');
+      alert(`Thank you ${name}! Your site visit request for ${currentProject.name} has been routed to our Sector 104 advisory desk via WhatsApp.`);
+    }
+  </script>
+</body>
+</html>
